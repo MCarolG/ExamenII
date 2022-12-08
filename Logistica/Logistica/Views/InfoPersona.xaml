@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local ="clr-namespace:Logistica.ViewModels"
+             IconImageSource="user.png"
+             x:Class="Logistica.Views.InfoPersona">
+
+    <ContentPage.BindingContext>
+
+        <local:ViewModelPersona></local:ViewModelPersona>
+
+    </ContentPage.BindingContext>
+
+    <ContentPage.Content>
+        <StackLayout>
+            <Image Source="https://tse4.mm.bing.net/th/id/OIP.JiIgorDtd3dQtkLr2i3XLQHaHo?pid=ImgDet"></Image>
+
+            <Label Text="Nombre"></Label>
+            <Entry Text="{Binding Name}" Keyboard="Text"></Entry>
+
+            <Label Text="Empresa"></Label>
+            <Entry Text="{Binding Empresa}" Keyboard="Text" ></Entry>
+
+            <Label Text="Id"></Label>
+            <Entry Text="{Binding Id}" Keyboard="Numeric" ></Entry>
+
+            <Label Text="Pais"></Label>
+            <Picker SelectedItem="{Binding Pais}" Title="Seleccione Pais"
+                    TitleColor="Black">
+                <Picker.ItemsSource>
+                    <x:Array Type="{x:Type x:String}">
+                        <x:String>Honduras</x:String>
+                        <x:String>El Salvador</x:String>
+                        <x:String>Estados Unidos</x:String>
+                    </x:Array>
+                </Picker.ItemsSource>
+            </Picker>
+
+            <Button Text="Guardar" Command="{Binding CrearPersona}"></Button>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

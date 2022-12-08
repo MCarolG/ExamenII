@@ -1,0 +1,35 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.3.32929.385
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Logistica.Android", "Logistica\Logistica.Android\Logistica.Android.csproj", "{DF7D58CE-E605-4E1A-A9F0-AE72E5E0FA97}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Logistica", "Logistica\Logistica\Logistica.csproj", "{C5EF22EE-3794-4734-9BB6-2A9C0FEDAA2A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{DF7D58CE-E605-4E1A-A9F0-AE72E5E0FA97}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DF7D58CE-E605-4E1A-A9F0-AE72E5E0FA97}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DF7D58CE-E605-4E1A-A9F0-AE72E5E0FA97}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{DF7D58CE-E605-4E1A-A9F0-AE72E5E0FA97}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DF7D58CE-E605-4E1A-A9F0-AE72E5E0FA97}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DF7D58CE-E605-4E1A-A9F0-AE72E5E0FA97}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{C5EF22EE-3794-4734-9BB6-2A9C0FEDAA2A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C5EF22EE-3794-4734-9BB6-2A9C0FEDAA2A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C5EF22EE-3794-4734-9BB6-2A9C0FEDAA2A}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{C5EF22EE-3794-4734-9BB6-2A9C0FEDAA2A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C5EF22EE-3794-4734-9BB6-2A9C0FEDAA2A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C5EF22EE-3794-4734-9BB6-2A9C0FEDAA2A}.Release|Any CPU.Deploy.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {0948E6FC-B894-427B-BB0D-85CDC04C351B}
+	EndGlobalSection
+EndGlobal

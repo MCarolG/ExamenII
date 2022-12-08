@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local ="clr-namespace:Logistica.ViewModels"
+             IconImageSource="lowtide.png"
+             x:Class="Logistica.Views.InfoMaritimo">
+
+    <ContentPage.BindingContext>
+
+        <local:ViewModelMaritimo></local:ViewModelMaritimo>
+
+    </ContentPage.BindingContext>
+
+    <ContentPage.Content>
+        <StackLayout>
+            <Label Text="Maritimo"
+                VerticalOptions="CenterAndExpand" 
+                HorizontalOptions="CenterAndExpand" />
+
+            <Picker Title="Seleccione Service"
+                    TitleColor="Black"  SelectedItem="{Binding Service}">
+                <Picker.ItemsSource>
+                    <x:Array Type="{x:Type x:String}">
+                        <x:String>Contenedor 20'</x:String>
+                        <x:String>Contenedor 45'</x:String>
+                        <x:String>Consolidado LCL</x:String>
+                    </x:Array>
+                </Picker.ItemsSource>
+            </Picker>
+
+            <Label Text="Fecha Salida"/>
+            <DatePicker MinimumDate="{Binding FechaMin}" Date="{Binding FechaSalida}" ></DatePicker>
+
+            <Button Text="Guardar" Command="{Binding CrearSalida}" ></Button>
+
+            <Label Text="{Binding Resultado}"  />
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

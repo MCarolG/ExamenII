@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:Logistica.ViewModels"
+             IconImageSource="deliver.png"
+             x:Class="Logistica.Views.InfoServicios">
+
+    <ContentPage.BindingContext>
+        
+        <local:ViewModelServicios></local:ViewModelServicios>
+        
+    </ContentPage.BindingContext>
+
+    <ContentPage.Content>
+        <StackLayout>
+            <Label Text="Servicios"
+                VerticalOptions="CenterAndExpand" 
+                HorizontalOptions="CenterAndExpand" />
+
+            <Picker Title="Seleccione Servicios"
+                    TitleColor="Black"  SelectedItem="{Binding Servicios}">
+                <Picker.ItemsSource>
+                    <x:Array Type="{x:Type x:String}">
+                        <x:String>Almacenaje</x:String>
+                        <x:String>Terrestre</x:String>
+                        <x:String>Aduana</x:String>
+                        <x:String>Aereo</x:String>
+                    </x:Array>
+                </Picker.ItemsSource>
+            </Picker>
+
+            <Label Text="Fecha de Solicitud"></Label>
+            <DatePicker MinimumDate="{Binding FechaMin}"  Date="{Binding FechaSolicitud}" ></DatePicker>
+
+            <Label Text="Hora Inicio"/>
+            <TimePicker Time="{Binding HoraInicio}" ></TimePicker>
+
+            <Label Text="Hora Fin"/>
+            <TimePicker Time="{Binding HoraFin}"></TimePicker>
+
+            <Button Text="Guardar" Command="{Binding GuardarSolicitud}"></Button>
+
+            <Label Text="{Binding Resultado}"  />
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
